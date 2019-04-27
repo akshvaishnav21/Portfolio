@@ -1,19 +1,9 @@
-
+/* ID selectors */
 
 body {
     color: #878787;
     text-align: center;
     margin: 0;
-}
-
-
-
-.main-header {
-    background-color: orange;
-}
-.title {
-    color: white;
-    font-size: 26px;
 }
 
 ul li {
@@ -37,6 +27,14 @@ h3 {
 p {
     font-size: 20px;
 }
+/* class selectors */
+.main-header {
+    background-color: orange;
+}
+.title {
+    color: white;
+    font-size: 26px;
+}
 
 .primary-content {
     text-align: center;
@@ -46,8 +44,25 @@ p {
     border-top: 2px solid lightgrey;
 }
 
-#main-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: solid 10px orange;
+
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+:focus {
+    color: white;
+    background-color: orange:
 }
