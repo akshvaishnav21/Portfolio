@@ -64,9 +64,6 @@ body {
     margin-left: 0;
   }
 
-  li {
-
-  }
   /* Pseudo-classes ------------------ */
   
   a:link {
@@ -317,3 +314,4 @@ body {
       margin-right: auto;
       color: white;
     }
+}
