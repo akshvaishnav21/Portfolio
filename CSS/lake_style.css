@@ -236,12 +236,83 @@ body {
   .nav a:hover {
     color: white
   }
-  .nav {
-    max-width: 1200px;
-  }
 
-  .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-  }  
+
+  /* Media Queries -------------------- */
+ @media (max-width: 1024px) {
+     .primary-content,
+     .secondary-content {
+         width: 90%;
+     }
+     .wildlife {
+         padding: 10% 12%;
+         margin: 50px, 0px, 20px;
+     }
+ }
+
+ @media (max-width: 768px) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+        padding: 20px;
+        border: top none;
+    }
+    .main-header {
+        max-height: 380px;
+        padding: 150px 25px 25px 0px;    
+    }
+
+    .title {
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .resorts,
+    .tips {
+        float: none;
+        width:100%;
+    }
+
+    .main-footer {
+        padding: 20px 0px;
+    }
+
+    
+}
+
+@media screen and (min-width: 720px) {
+
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+      color: white;
+    }
