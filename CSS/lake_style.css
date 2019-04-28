@@ -91,6 +91,7 @@
     padding: 10px;
     position: fixed;
     text-align: center;
+    
   }
   .nav {
     display: flex;
@@ -115,7 +116,7 @@
 
   
   .main-header {
-    padding-top: 170px;
+    padding-top: 200px;
     height: 850px;
     background: linear-gradient(#ffa949, transparent 90%),
                 linear-gradient(0deg, #fff, transparent),
@@ -246,7 +247,7 @@
     }
     .main-header {
       max-height: 380px;
-      padding: 50px 25px 0;
+      padding: 100px 25px 0;
     }
     .title {
       font-size: 1.3rem;
@@ -270,24 +271,21 @@
     .main-footer {
       padding: 20px 0;
     }
+  }
     /* Section Styles */
 
   
 
 
-@media screen and (min-width: 720px) {
-
-    .flex {
+    @media screen and (min-width: 720px) {
+      .flex {
         display: flex;
         max-width: 1200px;
         justify-content: space-around;
         margin: 0 auto;
     }
   
-    header {
-      min-height: 450px;
-    }
-  
+    
     .nav {
       max-width: 1200px;
     }
@@ -297,5 +295,6 @@
       margin-right: auto;
       color: white;
     }
-}
-  }
+    }
+
+     
