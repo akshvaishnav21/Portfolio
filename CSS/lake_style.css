@@ -56,13 +56,16 @@ body {
   /* Main Styles --------------------- */
   
   .main-header {
-    background-color: #ffa949;
+    
     height: 850px;
     padding-top: 170px;
+    /* background-color: #ffa949;
     background-image: url('../img/mountains.jpg');
-    background-size: 40%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
+    */
+    background: #ffa949 url('../img/mountains.jpg')  no-repeat center / cover ;
   }
   
   .title {
@@ -133,3 +136,18 @@ body {
   .arrow {
       width: 50px;
   }
+
+    /* Floated Columns ------------------ */
+
+    .resorts,
+    .tips  {
+        width: 46.5%;
+    }
+
+    .tips {
+        float: right;
+    }
+
+    .resorts {
+        float: left;
+    }
