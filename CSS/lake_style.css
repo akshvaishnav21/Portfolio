@@ -1,11 +1,9 @@
-/* Type Selectors ------------------ */
+/* Base Styles -------------------- */
 
 body {
     color: #878787;
     margin: 0;
-   
-    font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font: weight size/line_height font-family */
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   
   h1 {  
@@ -18,17 +16,16 @@ body {
   
   h2 {
     font-size: 3.3125em; /* 53px/16px  */
-    text-decoration: underline;
     font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 .5em; /* 0 0 26px */
   }
   
   h3 {
     font-size: 1.25em; /* 20px/16px  */
     color: #48525c;
-  }
-  
-  p {
-  
+    line-height: 1.2;
+    margin-bottom: 1.7em; /* 34px */
   }
   
   /* Pseudo-classes ------------------ */
@@ -36,6 +33,7 @@ body {
   a:link {
     color: rgb(255, 169, 73);
     text-decoration: none;
+  
   }
   
   a:visited {
@@ -50,15 +48,7 @@ body {
     color: lightcoral;
   }
   
-  /* ID Selectors -------------------- */
-  
-  #main-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: solid 10px #ffa949;
-  }
-  
-  /* Class Selectors ----------------- */
+  /* Main Styles --------------------- */
   
   .main-header {
     background-color: #ffa949;
@@ -69,24 +59,54 @@ body {
     font-size: 1.625rem; /* 26px/16px */
   }
   
-  .primary-content, 
-  .secondary-content {
-    width: 60%;
+  .intro {
+    font-size: 1.25em; /* 20px/16px */
+    line-height: 1.6;  
   }
   
   .primary-content,
-  .main-header {
+  .main-header,
+  .main-footer {
     text-align: center;
   }
   
+  .primary-content {
+      padding-top: 25px;
+    padding-bottom: 95px;
+  }
+  
+  .secondary-content {
+      padding-top: 80px;
+      padding-bottom: 70px;
+    border-bottom: 2px solid #dfe2e6;
+  }
+  
+  .main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #ffa949;
+  }
+  
   .t-border {
-    border-top: 2px solid lightgrey; /* Top border styles */
+    border-top: 2px solid #dfe2e6;
+  }
+  
+  /* Layout Styles ------------------ */
+  
+  .primary-content, 
+  .secondary-content {
+    width: 60%;
+    margin: auto;
   }
   
   .wildlife {
-      color: white;
-      background-color: black;
-      padding: 100px, 120px;
-      border-width: 10px;
-      border-style: solid;
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border-top: 10px solid #ffa949;
+    margin: 105px 0 60px;
+    
   }
+  
+  
+  
