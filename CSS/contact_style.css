@@ -12,3 +12,57 @@ input:disabled {
 input[type="checkbox"]:checked + label {
   font-weight: bold;
 }
+
+/* Main Styles --------------------- */
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  position: fixed;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav .name {
+  display: none;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 720px) {
+  .flex {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.nav {
+  max-width: 1200px;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+}
